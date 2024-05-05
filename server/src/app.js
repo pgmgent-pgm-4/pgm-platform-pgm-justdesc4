@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import nunjucks from 'nunjucks';
 import dotenv from 'dotenv';
 import cors from 'cors';
- 
+
 import passportConfig from './config/passport';
 import globalRouter from './routes';
 
@@ -30,7 +30,7 @@ https://www.npmjs.com/package/body-parser
 */
 
 // Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ 
+app.use(bodyParser.urlencoded({
   extended: false,
 }));
 // Parse application/json
