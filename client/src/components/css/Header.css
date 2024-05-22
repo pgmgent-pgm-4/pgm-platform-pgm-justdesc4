@@ -25,3 +25,7 @@ header ul {
   align-items: center;
   gap: 1rem;
 }
+
+.open-menu {
+  cursor: pointer;
+}

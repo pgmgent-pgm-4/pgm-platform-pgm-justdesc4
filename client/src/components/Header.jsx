@@ -34,7 +34,7 @@ export default function Header() {
               </svg>
             </NavLink>
           </li>
-          <li>
+          <li className="open-menu">
             <svg
               onClick={() => {
                 console.log("Menu button clicked");
