@@ -11,9 +11,9 @@ export const ROUTES = {
     path: "/blog",
     title: "Blog",
   },
-  program: {
-    path: "/program",
-    title: "Program",
+  curriculum: {
+    path: "/curriculum",
+    title: "Curriculum",
   },
   portfolio: {
     path: "/portfolio",

@@ -1,5 +1,4 @@
 import "./App.css";
-
 import {
   Route,
   RouterProvider,
@@ -10,7 +9,7 @@ import {
   Home,
   Course,
   Blog,
-  Program,
+  Curriculum,
   Portfolio,
   Services,
   Team,
@@ -18,6 +17,9 @@ import {
 } from "./pages";
 import Root from "./layouts/Root";
 import { ROUTES } from "./routes/routes";
+import { MenuProvider } from "./context/MenuContext";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,7 +31,7 @@ const router = createBrowserRouter(
       <Route path={ROUTES.home.path} element={<Home />} />
       <Route path={ROUTES.course.path} element={<Course />} />
       <Route path={ROUTES.blog.path} element={<Blog />} />
-      <Route path={ROUTES.program.path} element={<Program />} />
+      <Route path={ROUTES.curriculum.path} element={<Curriculum />} />
       <Route path={ROUTES.portfolio.path} element={<Portfolio />} />
       <Route path={ROUTES.services.path} element={<Services />} />
       <Route path={ROUTES.team.path} element={<Team />} />
@@ -39,7 +41,15 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <MenuProvider>
+      <RouterProvider router={router}>
+        <Header />
+        <Menu />
+        {/* Other components */}
+      </RouterProvider>
+    </MenuProvider>
+  );
 }
 
 export default App;
