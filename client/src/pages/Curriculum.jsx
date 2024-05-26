@@ -10,7 +10,7 @@ export default function Curriculum() {
   const courses = data.courses;
 
   return (
-    <div>
+    <div className="container">
       {courses.map((course, index) => (
         <SpotArticle
           key={index}

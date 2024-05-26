@@ -1,5 +1,8 @@
 header {
   background-color: black;
+}
+
+header .container {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -28,4 +31,9 @@ header ul {
 
 .open-menu {
   cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }

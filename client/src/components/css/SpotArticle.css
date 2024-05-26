@@ -3,15 +3,18 @@ article {
   justify-content: center;
   align-items: center;
   margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background-color: #f0f0f0;
-  box-shadow: 0 0 10px #000;
+}
+
+article:nth-child(odd) {
+  flex-direction: row;
+}
+
+article:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 article figure {
-  max-width: 10rem;
+  max-width: 45rem;
 }
 
 article img {
