@@ -1,5 +1,21 @@
 import { gql } from "@apollo/client";
 
+export const GET_ALL_PROJECTS = gql`
+  query GET_ALL_PROJECTS {
+    projects {
+      title
+      description
+      images {
+        url
+      }
+      course {
+        title
+      }
+      slug
+    }
+  }
+`;
+
 export const GET_ALL_COURSES = gql`
   query GET_ALL_COURSES {
     courses {
@@ -7,6 +23,16 @@ export const GET_ALL_COURSES = gql`
       description
       image {
         url
+      }
+      projects {
+        id
+        images {
+          id
+          url
+        }
+        slug
+        title
+        smallDescription
       }
     }
   }

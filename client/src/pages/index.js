@@ -6,5 +6,16 @@ import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Team from "./Team";
 import Search from "./Search";
+import Project from "./Project";
 
-export { Home, Course, Blog, Curriculum, Portfolio, Services, Team, Search };
+export {
+  Home,
+  Course,
+  Blog,
+  Curriculum,
+  Portfolio,
+  Services,
+  Team,
+  Search,
+  Project,
+};

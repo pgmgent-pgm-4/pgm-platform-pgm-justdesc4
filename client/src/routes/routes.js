@@ -31,4 +31,8 @@ export const ROUTES = {
     path: "/search",
     title: "Search",
   },
+  project: {
+    path: "/projects/:slug",
+    title: "Project",
+  },
 };
