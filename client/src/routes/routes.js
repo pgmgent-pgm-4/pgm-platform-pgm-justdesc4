@@ -35,4 +35,8 @@ export const ROUTES = {
     path: "/projects/:slug",
     title: "Project",
   },
+  blogpost: {
+    path: "/blog/:slug",
+    title: "Blogpost",
+  },
 };

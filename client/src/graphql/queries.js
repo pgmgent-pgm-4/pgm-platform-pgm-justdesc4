@@ -1,5 +1,19 @@
 import { gql } from "@apollo/client";
 
+export const GET_ALL_BLOGPOSTS = gql`
+  query GET_ALL_BLOGPOSTS {
+    blogposts {
+      title
+      smallDescription
+      description
+      image {
+        url
+      }
+      slug
+    }
+  }
+`;
+
 export const GET_ALL_PROJECTS = gql`
   query GET_ALL_PROJECTS {
     projects {

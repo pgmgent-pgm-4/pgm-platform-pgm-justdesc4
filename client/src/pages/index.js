@@ -7,6 +7,7 @@ import Services from "./Services";
 import Team from "./Team";
 import Search from "./Search";
 import Project from "./Project";
+import BlogPost from "./BlogPost";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Team,
   Search,
   Project,
+  BlogPost,
 };

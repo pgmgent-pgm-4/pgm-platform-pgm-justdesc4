@@ -16,6 +16,7 @@ import {
   Team,
   Search,
   Project,
+  BlogPost,
 } from "./pages";
 import Root from "./layouts/Root";
 import { ROUTES } from "./routes/routes";
@@ -37,6 +38,7 @@ const router = createBrowserRouter(
       <Route path={ROUTES.team.path} element={<Team />} />
       <Route path={ROUTES.search.path} element={<Search />} />
       <Route path={ROUTES.project.path} element={<Project />} />
+      <Route path={ROUTES.blogpost.path} element={<BlogPost />} />
     </Route>
   )
 );

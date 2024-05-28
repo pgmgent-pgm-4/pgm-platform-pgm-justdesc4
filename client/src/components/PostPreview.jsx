@@ -7,7 +7,10 @@ export default function PostPreview({ posts, path }) {
         <article key={index}>
           <a href={`${path}/${post.slug}`}>
             <figure>
-              <img src={post.images[0].url} alt={post.title} />
+              <img
+                src={post.images ? post.images[0].url : post.image.url}
+                alt={post.title}
+              />
             </figure>
             <h2>{post.title}</h2>
             <p>{post.smallDescription}</p>
