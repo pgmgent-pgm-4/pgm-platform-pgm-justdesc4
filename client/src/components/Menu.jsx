@@ -1,22 +1,15 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { ROUTES } from "../routes/routes";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { MenuContext } from "../context/MenuContext";
 import "./css/Menu.css";
 
 export default function Menu() {
   const { isOpen, toggleMenu } = useContext(MenuContext);
+  const location = useLocation();
 
-  useEffect(() => {
-    if (isOpen) {
-      console.log("Menu mounted");
-    } else {
-      console.log("Menu unmounted");
-    }
-  }, [isOpen]);
-
-  return isOpen ? (
-    <div className="menu">
+  return (
+    <div className={`menu ${isOpen ? "" : "menu__hidden"}`}>
       <div className="menu__top">
         <div className="logo">
           <h1>PGM Portfolio</h1>
@@ -33,32 +26,86 @@ export default function Menu() {
       <nav className="menu__items">
         <ul>
           <li>
-            <NavLink to={ROUTES.home.path}>{ROUTES.home.title}</NavLink>
+            <NavLink
+              to={ROUTES.home.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.home.path ? "active-link" : ""
+              }
+            >
+              {ROUTES.home.title}
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.course.path}>{ROUTES.course.title}</NavLink>
+            <NavLink
+              to={ROUTES.course.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.course.path ? "active-link" : ""
+              }
+            >
+              {ROUTES.course.title}
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.blog.path}>{ROUTES.blog.title}</NavLink>
+            <NavLink
+              to={ROUTES.blog.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.blog.path ? "active-link" : ""
+              }
+            >
+              {ROUTES.blog.title}
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.program.path}>{ROUTES.program.title}</NavLink>
+            <NavLink
+              to={ROUTES.curriculum.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.curriculum.path
+                  ? "active-link"
+                  : ""
+              }
+            >
+              {ROUTES.curriculum.title}
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.portfolio.path}>
+            <NavLink
+              to={ROUTES.portfolio.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.portfolio.path ? "active-link" : ""
+              }
+            >
               {ROUTES.portfolio.title}
             </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.services.path}>{ROUTES.services.title}</NavLink>
+            <NavLink
+              to={ROUTES.services.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.services.path ? "active-link" : ""
+              }
+            >
+              {ROUTES.services.title}
+            </NavLink>
           </li>
           <li>
-            <NavLink to={ROUTES.team.path}>{ROUTES.team.title}</NavLink>
+            <NavLink
+              to={ROUTES.team.path}
+              onClick={toggleMenu}
+              className={
+                location.pathname === ROUTES.team.path ? "active-link" : ""
+              }
+            >
+              {ROUTES.team.title}
+            </NavLink>
           </li>
         </ul>
       </nav>
     </div>
-  ) : (
-    <div className="menu__hidden"></div>
   );
 }

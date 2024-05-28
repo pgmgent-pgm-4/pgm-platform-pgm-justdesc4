@@ -7,3 +7,11 @@
   background-color: black;
   color: white;
 }
+
+.menu__hidden {
+  display: none;
+}
+
+.active-link {
+  color: hsl(202, 100%, 50%);
+}

@@ -20,8 +20,6 @@ import {
 import Root from "./layouts/Root";
 import { ROUTES } from "./routes/routes";
 import { MenuProvider } from "./context/MenuContext";
-import Header from "./components/Header";
-import Menu from "./components/Menu";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,11 +44,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <MenuProvider>
-      <RouterProvider router={router}>
-        <Header />
-        <Menu />
-        {/* Other components */}
-      </RouterProvider>
+      <RouterProvider router={router}>{/* Other components */}</RouterProvider>
     </MenuProvider>
   );
 }
