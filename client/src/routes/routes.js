@@ -39,4 +39,8 @@ export const ROUTES = {
     path: "/blog/:slug",
     title: "Blogpost",
   },
+  service: {
+    path: "/services/:slug",
+    title: "Service",
+  },
 };

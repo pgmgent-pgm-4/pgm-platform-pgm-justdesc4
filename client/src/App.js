@@ -39,6 +39,7 @@ const router = createBrowserRouter(
       <Route path={ROUTES.search.path} element={<Search />} />
       <Route path={ROUTES.project.path} element={<Project />} />
       <Route path={ROUTES.blogpost.path} element={<BlogPost />} />
+      <Route path={ROUTES.service.path} element={<Services />} />
     </Route>
   )
 );
