@@ -6,7 +6,9 @@ export default function Filter({ items, onItemClick }) {
       <ul>
         {items.map((item, index) => (
           <li key={index}>
-            <button onClick={() => onItemClick(item)}>{item.title}</button>
+            <button onClick={() => onItemClick(item)}>
+              {item.title || item}
+            </button>
           </li>
         ))}
       </ul>

@@ -1,5 +1,18 @@
 import { gql } from "@apollo/client";
 
+export const GET_ALL_TEAM_MEMBERS = gql`
+  query GET_ALL_TEAM_MEMBERS {
+    teammembers(first: 100) {
+      name
+      image {
+        url
+      }
+      role
+      category
+    }
+  }
+`;
+
 export const GET_ALL_SERVICES = gql`
   query GET_ALL_SERVICES {
     services {
