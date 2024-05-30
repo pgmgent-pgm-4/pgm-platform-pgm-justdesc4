@@ -78,3 +78,19 @@ export const GET_ALL_COURSES = gql`
     }
   }
 `;
+
+export const GET_EDUCATIONS = gql`
+  query GET_EDUCATIONS {
+    educations {
+      title
+      description
+      extraInfo
+      expectation
+      images {
+        url
+      }
+      informationDay
+      educationUrl
+    }
+  }
+`;

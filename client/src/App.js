@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import {
   Home,
-  Course,
+  Education,
   Blog,
   Curriculum,
   Portfolio,
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       errorElement={<div>404 - Sorry this page does not exist</div>}
     >
       <Route path={ROUTES.home.path} element={<Home />} />
-      <Route path={ROUTES.course.path} element={<Course />} />
+      <Route path={ROUTES.education.path} element={<Education />} />
       <Route path={ROUTES.blog.path} element={<Blog />} />
       <Route path={ROUTES.curriculum.path} element={<Curriculum />} />
       <Route path={ROUTES.portfolio.path} element={<Portfolio />} />

@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Course from "./Course";
+import Education from "./Education";
 import Blog from "./Blog";
 import Curriculum from "./Curriculum";
 import Portfolio from "./Portfolio";
@@ -11,7 +11,7 @@ import BlogPost from "./BlogPost";
 
 export {
   Home,
-  Course,
+  Education,
   Blog,
   Curriculum,
   Portfolio,

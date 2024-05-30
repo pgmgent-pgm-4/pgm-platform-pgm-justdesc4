@@ -3,9 +3,9 @@ export const ROUTES = {
     path: "/",
     title: "Home",
   },
-  course: {
-    path: "/course",
-    title: "Course",
+  education: {
+    path: "/education",
+    title: "Opleiding",
   },
   blog: {
     path: "/blog",

@@ -38,13 +38,13 @@ export default function Menu() {
           </li>
           <li>
             <NavLink
-              to={ROUTES.course.path}
+              to={ROUTES.education.path}
               onClick={toggleMenu}
               className={
-                location.pathname === ROUTES.course.path ? "active-link" : ""
+                location.pathname === ROUTES.education.path ? "active-link" : ""
               }
             >
-              {ROUTES.course.title}
+              {ROUTES.education.title}
             </NavLink>
           </li>
           <li>
