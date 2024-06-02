@@ -94,3 +94,48 @@ export const GET_EDUCATIONS = gql`
     }
   }
 `;
+
+export const GET_ALL_FOR_HOME = gql`
+  query GET_ALL_FOR_HOME {
+    educations {
+      educationUrl
+      title
+      description
+      images {
+        url
+      }
+    }
+    projects {
+      title
+      smallDescription
+      slug
+      images {
+        url
+      }
+    }
+    blogposts {
+      title
+      smallDescription
+      slug
+      image {
+        url
+      }
+    }
+    services {
+      title
+      smallDescription
+      slug
+      image {
+        url
+      }
+    }
+  }
+`;
+
+export const GET_EDUCATION_LINK = gql`
+  query GET_EDUCATION_LINK {
+    educations {
+      educationUrl
+    }
+  }
+`;

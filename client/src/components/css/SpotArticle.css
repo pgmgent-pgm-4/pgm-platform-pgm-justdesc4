@@ -1,22 +1,22 @@
-article {
+.spotArticle {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem;
 }
 
-article:nth-child(odd) {
+.spotArticle:nth-child(odd) {
   flex-direction: row;
 }
 
-article:nth-child(even) {
+.spotArticle:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-article figure {
+.spotArticle figure {
   max-width: 45rem;
 }
 
-article img {
+.spotArticle img {
   width: 100%;
 }
