@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import { useQuery } from "@apollo/client";
 import { GET_EDUCATION_LINK } from "../graphql/queries";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 export default function Root() {
   const { loading, error, data } = useQuery(GET_EDUCATION_LINK);
@@ -18,6 +19,7 @@ export default function Root() {
     <>
       <Header />
       <Menu />
+      <ThemeSwitcher />
       <main>
         <Outlet />
       </main>

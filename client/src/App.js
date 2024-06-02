@@ -21,6 +21,7 @@ import {
 import Root from "./layouts/Root";
 import { ROUTES } from "./routes/routes";
 import { MenuProvider } from "./context/MenuContext";
+import { ThemeArea } from "./context/ThemeContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,9 +47,13 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <MenuProvider>
-      <RouterProvider router={router}>{/* Other components */}</RouterProvider>
-    </MenuProvider>
+    <ThemeArea>
+      <MenuProvider>
+        <RouterProvider router={router}>
+          {/* Other components */}
+        </RouterProvider>
+      </MenuProvider>
+    </ThemeArea>
   );
 }
 

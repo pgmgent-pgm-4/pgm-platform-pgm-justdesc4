@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+body.dark {
+  background-color: black;
+  color: white;
+}
+
 h1 {
   text-align: center;
 }

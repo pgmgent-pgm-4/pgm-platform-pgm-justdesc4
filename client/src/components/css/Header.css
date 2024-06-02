@@ -11,16 +11,16 @@ header .container {
   padding: 0 2rem;
 }
 
-svg {
+header svg {
   color: white;
   width: 2rem;
 }
 
-li {
+header li {
   list-style: none;
 }
 
-ul {
+header ul {
   padding: 0;
 }
 
@@ -30,11 +30,11 @@ header ul {
   gap: 1rem;
 }
 
-.open-menu {
+header .open-menu {
   cursor: pointer;
 }
 
-a {
+header a {
   color: white;
   text-decoration: none;
 }

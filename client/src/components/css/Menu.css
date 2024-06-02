@@ -15,3 +15,20 @@
 .active-link {
   color: hsl(202, 100%, 50%);
 }
+
+.menu svg {
+  color: white;
+  width: 2rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu .open-menu {
+  cursor: pointer;
+}

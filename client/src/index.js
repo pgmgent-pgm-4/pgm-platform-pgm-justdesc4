@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_HYGRAPH_URL,
+  uri: process.env.REACT_APP_HYGRAPH_CONTENT_API,
   cache: new InMemoryCache(),
 });
 
