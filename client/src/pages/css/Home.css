@@ -1,0 +1,9 @@
+.spotlight-projects {
+  margin-top: 3rem;
+}
+
+.spotlight-projects .projects {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}

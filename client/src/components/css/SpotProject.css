@@ -1,0 +1,21 @@
+.spot-project {
+  position: relative;
+  max-width: 30rem;
+}
+
+.spot-project h2 {
+  background-color: #f58733;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+}
+
+.spot-project a {
+  text-decoration: none;
+  color: white;
+}
+
+.spot-project:hover h2 {
+  transform: translateY(-0.5rem) translateX(0.5rem);
+}

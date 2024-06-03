@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/client";
 import HeroHome from "../components/HeroHome";
 import SpotProject from "../components/SpotProject";
 import PostPreview from "../components/PostPreview";
+import "./css/Home.css";
 
 export default function Home() {
   const { loading, error, data } = useQuery(GET_ALL_FOR_HOME);
@@ -27,9 +28,9 @@ export default function Home() {
         image={education.images[2]}
       />
 
-      <section>
-        <h2>Bekijk onze projecten!</h2>
-        <div>
+      <section className="spotlight-projects">
+        <h1>Bekijk onze projecten!</h1>
+        <div className="projects">
           {firstThreeProjects.map((project, index) => (
             <SpotProject
               key={index}

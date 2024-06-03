@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/SpotProject.css";
 
 export default function SpotProject({ title, image, slug }) {
   return (
-    <div>
+    <div className="spot-project">
       <a href={`/projects/${slug}`}>
         <figure>
           <img src={image.url} alt={title} />
