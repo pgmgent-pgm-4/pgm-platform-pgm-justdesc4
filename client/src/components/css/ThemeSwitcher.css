@@ -5,7 +5,7 @@
 
 .theme-switcher button {
   border: 0;
-  background-color: #5ab946;
+  background-color: black;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -14,5 +14,17 @@
 }
 
 .theme-switcher button:hover {
-  background-color: #4a9c3d;
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+body.dark .theme-switcher button {
+  background-color: white;
+  color: black;
+}
+
+body.dark .theme-switcher button:hover {
+  background-color: black;
+  color: white;
 }

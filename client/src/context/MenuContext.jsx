@@ -6,6 +6,7 @@ export function MenuProvider({ children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
+    document.body.classList.toggle("no-scroll");
     setIsOpen(!isOpen);
   };
 

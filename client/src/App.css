@@ -1,12 +1,15 @@
+body {
+  overflow-x: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 75rem;
   width: 100%;
   margin: 0 auto;
-}
-
-body.dark {
-  background-color: black;
-  color: white;
 }
 
 h1 {
@@ -25,4 +28,10 @@ h1 {
 
 .btn-link:hover {
   background-color: #4a9c3d;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: black;
+  color: white;
 }

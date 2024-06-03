@@ -7,15 +7,46 @@
   background-color: black;
   color: white;
   z-index: 100;
-  overflow: hidden;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+}
+
+.menu__top .menu__btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu__close {
+  cursor: pointer;
+  font-size: 3rem;
+  padding-bottom: 0.8rem;
+}
+
+.menu__items {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-weight: 600;
+}
+
+.menu__items a {
+  text-decoration: none;
+  color: white;
 }
 
 .menu__hidden {
   display: none;
 }
 
-.active-link {
+.menu__items .active-link {
   color: hsl(202, 100%, 50%);
+  text-decoration: underline;
 }
 
 .menu svg {
