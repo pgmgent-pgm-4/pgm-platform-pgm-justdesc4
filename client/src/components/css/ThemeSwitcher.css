@@ -1,0 +1,18 @@
+.theme-switcher {
+  text-align: center;
+  margin: 1rem;
+}
+
+.theme-switcher button {
+  border: 0;
+  background-color: #5ab946;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.theme-switcher button:hover {
+  background-color: #4a9c3d;
+}

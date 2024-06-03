@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/pgmgent-pgm-4/graphcms-boilerplate/issues"
   },
-  "homepage": "https://github.com/pgmgent-pgm-4/graphcms-boilerplate#readme"
+  "homepage": "https://github.com/pgmgent-pgm-4/graphcms-boilerplate#readme",
+  "dependencies": {
+    "react-icons": "^5.2.1"
+  }
 }

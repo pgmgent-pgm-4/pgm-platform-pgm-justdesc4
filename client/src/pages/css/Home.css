@@ -1,3 +1,4 @@
+/* Projects */
 .spotlight-projects {
   margin-top: 3rem;
 }
@@ -6,4 +7,28 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+}
+
+.spotlight-projects h1 {
+  font-size: 1.75rem;
+}
+
+/* Blog, services */
+.spotlight-blog,
+.spotlight-services {
+  margin-top: 3rem;
+}
+
+.spotlight-blog {
+  margin-top: 5rem;
+}
+
+.spotlight-blog h2,
+.spotlight-services h2 {
+  margin-bottom: 1rem;
+}
+
+.spotlight-title {
+  font-size: 1.75rem;
+  margin-left: 0.5rem;
 }

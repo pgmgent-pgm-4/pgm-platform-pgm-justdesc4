@@ -1,10 +1,11 @@
 import React from "react";
+import "./css/PostPreview.css";
 
 export default function PostPreview({ posts, path }) {
   return (
-    <div>
+    <div className="posts">
       {posts.map((post, index) => (
-        <article key={index}>
+        <article key={index} className="post">
           <a href={`${path}/${post.slug}`}>
             <figure>
               <img

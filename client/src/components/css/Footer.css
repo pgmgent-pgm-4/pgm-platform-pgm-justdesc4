@@ -1,0 +1,23 @@
+footer {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+footer .footer-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: underline;
+  color: black;
+}
+
+footer p {
+  margin-left: 1.2rem;
+}

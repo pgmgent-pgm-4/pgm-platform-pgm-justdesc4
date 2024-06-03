@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { MdSunny, MdDarkMode } from "react-icons/md";
+import "./css/ThemeSwitcher.css";
 
 export default function ThemeSwitcher() {
   const [isDarkMode, setIsDarkMode] = useContext(ThemeContext);
@@ -13,9 +15,9 @@ export default function ThemeSwitcher() {
   };
 
   return (
-    <div>
+    <div className="theme-switcher">
       <button onClick={handleClick}>
-        {isDarkMode ? "Light" : "Dark"} Mode
+        {isDarkMode ? <MdSunny /> : <MdDarkMode />}
       </button>
     </div>
   );

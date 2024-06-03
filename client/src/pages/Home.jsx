@@ -42,13 +42,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <h2>Blog.</h2>
+      <section className="spotlight-blog">
+        <h2 className="spotlight-title">Blog.</h2>
         <PostPreview posts={firstThreeBlogposts} path="/blog" />
       </section>
 
-      <section>
-        <h2>Services.</h2>
+      <section className="spotlight-services">
+        <h2 className="spotlight-title">Services.</h2>
         <PostPreview posts={firstThreeServices} path="/services" />
       </section>
     </div>

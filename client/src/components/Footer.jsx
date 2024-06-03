@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/Footer.css";
 
 export default function Footer({ link }) {
   return (
@@ -11,7 +12,7 @@ export default function Footer({ link }) {
             </a>
           </li>
         </ul>
-        <ul>
+        <ul className="footer-flex">
           <li>
             <a target="_blank" href={link}>
               Arteveldehogeschool
@@ -25,7 +26,7 @@ export default function Footer({ link }) {
         </ul>
       </div>
       <div>
-        <p>©PGM Platform</p>
+        <p>© PGM Platform</p>
       </div>
     </footer>
   );
