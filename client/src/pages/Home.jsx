@@ -19,7 +19,7 @@ export default function Home() {
   console.log(data);
 
   return (
-    <>
+    <div className="container">
       <HeroHome
         title={education.title}
         description={education.description}
@@ -50,6 +50,6 @@ export default function Home() {
         <h2>Services.</h2>
         <PostPreview posts={firstThreeServices} path="/services" />
       </section>
-    </>
+    </div>
   );
 }

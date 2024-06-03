@@ -1,12 +1,15 @@
 import React from "react";
+import "./css/HeroHome.css";
 
 export default function HeroHome({ title, description, image, link }) {
   return (
-    <section>
+    <section className="hero-home">
       <div>
         <h1>{title}</h1>
         <p>{description}</p>
-        <a href={link}>Lees meer</a>
+        <a className="btn-link" href={link}>
+          Lees meer
+        </a>
       </div>
       <figure>
         <img src={image.url} alt={title} />

@@ -1,0 +1,19 @@
+.hero-home {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-home h1 {
+  text-align: start;
+  max-width: 15rem;
+  line-height: 100%;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-home p {
+  max-width: 70rem;
+  margin-bottom: 2rem;
+}

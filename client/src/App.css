@@ -12,3 +12,17 @@ body.dark {
 h1 {
   text-align: center;
 }
+
+/* Button link */
+.btn-link {
+  text-decoration: none;
+  color: white;
+  background-color: #5ab946;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+.btn-link:hover {
+  background-color: #4a9c3d;
+}
