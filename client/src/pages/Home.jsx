@@ -17,8 +17,6 @@ export default function Home() {
   const firstThreeBlogposts = data.blogposts.slice(0, 3);
   const firstThreeServices = data.services.slice(0, 3);
 
-  console.log(data);
-
   return (
     <div className="container">
       <HeroHome
@@ -40,16 +38,25 @@ export default function Home() {
             />
           ))}
         </div>
+        <a className="seemore-btn" href="/portfolio">
+          See more
+        </a>
       </section>
 
       <section className="spotlight-blog">
         <h2 className="spotlight-title">Blog.</h2>
         <PostPreview posts={firstThreeBlogposts} path="/blog" />
+        <a className="seemore-btn" href="/blog">
+          See more
+        </a>
       </section>
 
       <section className="spotlight-services">
         <h2 className="spotlight-title">Services.</h2>
         <PostPreview posts={firstThreeServices} path="/services" />
+        <a className="seemore-btn" href="/services">
+          See more
+        </a>
       </section>
     </div>
   );

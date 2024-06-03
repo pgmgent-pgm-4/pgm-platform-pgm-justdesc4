@@ -2,6 +2,7 @@ import React from "react";
 import { GET_EDUCATIONS } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
 import InfoDay from "../components/InfoDay";
+import "./css/Education.css";
 
 export default function Education() {
   const { loading, error, data } = useQuery(GET_EDUCATIONS);
@@ -20,7 +21,7 @@ export default function Education() {
         date={education.informationDay}
       />
 
-      <section>
+      <section className="extra-info container">
         {education.extraInfo.map((info, index) => (
           <article key={index}>
             <h3>{info.title}</h3>
@@ -29,11 +30,11 @@ export default function Education() {
         ))}
       </section>
 
-      <figure>
+      <figure className="fw-banner">
         <img src={education.images[1].url} alt="Banner" />
       </figure>
 
-      <section>
+      <section className="expectations container">
         <h2>Iets voor jou?</h2>
         {education.expectation.map((expect, index) => (
           <ul>

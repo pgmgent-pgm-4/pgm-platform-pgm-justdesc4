@@ -1,0 +1,15 @@
+.info-day {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.info-day h2 {
+  text-align: center;
+}
+
+.info-day p {
+  margin: 3rem 0;
+}
