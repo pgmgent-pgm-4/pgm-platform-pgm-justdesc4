@@ -22,6 +22,11 @@
   gap: 1rem;
 }
 
+.menu__top .logo {
+  text-decoration: none;
+  color: white;
+}
+
 .menu__close {
   cursor: pointer;
   font-size: 3rem;
@@ -38,6 +43,10 @@
 .menu__items a {
   text-decoration: none;
   color: white;
+}
+
+.menu__items a:hover {
+  color: hsl(202, 100%, 50%);
 }
 
 .menu__hidden {

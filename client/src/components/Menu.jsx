@@ -12,9 +12,9 @@ export default function Menu() {
     <div className={`menu ${isOpen ? "" : "menu__hidden"}`}>
       <div className="container">
         <div className="menu__top">
-          <div className="logo">
+          <a href="/" className="logo">
             <h1>PGM Platform</h1>
-          </div>
+          </a>
           <div className="menu__btns">
             <NavLink to={ROUTES.search.path} onClick={toggleMenu}>
               <svg
