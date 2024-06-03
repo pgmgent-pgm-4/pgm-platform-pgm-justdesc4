@@ -2,10 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
+  margin-left: 1rem;
 }
 
 .post {
-  max-width: 23rem;
+  max-width: 22rem;
+  width: 100%;
 }
 
 .post img {
@@ -24,4 +26,10 @@
 .post h2 {
   line-height: 100%;
   margin-bottom: 1rem;
+}
+
+/* Dark Mode */
+
+body.dark .post a {
+  color: #bfbfbf;
 }

@@ -2,7 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin-top: 3.5rem;
+  gap: 3.5rem;
+  padding: 2rem 0;
+  padding-bottom: 4rem;
+  border-bottom: 0.05rem solid black;
 }
 
 .spotArticle:nth-child(odd) {
@@ -13,10 +17,23 @@
   flex-direction: row-reverse;
 }
 
-.spotArticle figure {
-  max-width: 45rem;
+.spotArticle:last-child {
+  border-bottom: none;
+}
+
+.spotArticle h1 {
+  margin-bottom: 2rem;
 }
 
 .spotArticle img {
   width: 100%;
+}
+
+/* Dark Mode */
+body.dark .spotArticle {
+  border-bottom: 0.05rem solid white;
+}
+
+body.dark .spotArticle:last-child {
+  border-bottom: none;
 }

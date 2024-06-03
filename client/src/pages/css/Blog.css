@@ -1,3 +1,7 @@
 .blog-page h1 {
   margin-bottom: 3rem;
 }
+
+.blog-page .posts {
+  justify-content: flex-start;
+}

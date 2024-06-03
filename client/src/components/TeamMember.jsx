@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/TeamMember.css";
 
 export default function TeamMember({ member }) {
   return (
-    <div>
+    <div className="team-member">
       <figure>
         <img src={member.image.url} alt={member.name} />
       </figure>

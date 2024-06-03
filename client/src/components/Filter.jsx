@@ -1,8 +1,9 @@
 import React from "react";
+import "./css/Filter.css";
 
 export default function Filter({ items, onItemClick }) {
   return (
-    <div>
+    <div className="filter">
       <ul>
         {items.map((item, index) => (
           <li key={index}>

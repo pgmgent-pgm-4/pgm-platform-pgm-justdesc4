@@ -21,10 +21,10 @@
 /* Dark Mode */
 body.dark .theme-switcher button {
   background-color: white;
-  color: black;
+  color: #1f1f1f;
 }
 
 body.dark .theme-switcher button:hover {
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
 }

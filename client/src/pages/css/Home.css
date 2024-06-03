@@ -39,5 +39,10 @@
 
 .spotlight-title {
   font-size: 1.75rem;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+/* Dark Mode */
+body.dark .seemore-btn {
+  color: #bfbfbf;
 }

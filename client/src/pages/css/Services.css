@@ -1,0 +1,19 @@
+.services .filter ul {
+  max-width: 40rem;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services figure {
+  margin-bottom: 3rem;
+}
+
+.services img {
+  max-height: 40rem;
+  width: 100%;
+  object-fit: cover;
+}

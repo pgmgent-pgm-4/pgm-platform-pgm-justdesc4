@@ -1,0 +1,21 @@
+.project__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-top: 1rem;
+}
+
+.project__title h1 {
+  font-size: 2rem;
+}
+
+.project__title h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project p {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+}

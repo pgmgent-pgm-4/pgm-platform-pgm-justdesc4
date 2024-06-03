@@ -1,4 +1,15 @@
 /* Extra info */
+.extra-info {
+  font-size: 1.1rem;
+}
+.extra-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.extra-info p {
+  margin-bottom: 1.25rem;
+}
 
 /* Banner */
 .fw-banner img {

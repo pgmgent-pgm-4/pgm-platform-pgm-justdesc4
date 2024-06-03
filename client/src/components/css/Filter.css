@@ -1,0 +1,36 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin: 3.5rem 0;
+}
+
+.filter ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 1rem;
+}
+
+.filter li {
+  list-style: none;
+}
+
+.filter button {
+  background-color: #00a6d9;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.filter button:hover {
+  background-color: #0077a2;
+  color: white;
+}
+
+.filter button:active {
+  background-color: #0077a2;
+  color: white;
+}

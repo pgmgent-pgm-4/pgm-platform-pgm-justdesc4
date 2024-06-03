@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { GET_ALL_TEAM_MEMBERS } from "../graphql/queries";
 import Filter from "../components/Filter";
 import TeamMember from "../components/TeamMember";
+import "./css/Team.css";
 
 export default function Team() {
   const { loading, error, data } = useQuery(GET_ALL_TEAM_MEMBERS);
