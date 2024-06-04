@@ -6,6 +6,13 @@
   margin-top: 1rem;
 }
 
+@media (max-width: 50rem) {
+  .project__title {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
 .project__title h1 {
   font-size: 2rem;
 }

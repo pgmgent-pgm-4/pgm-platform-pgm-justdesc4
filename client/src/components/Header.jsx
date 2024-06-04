@@ -38,7 +38,6 @@ export default function Header() {
             <li className="open-menu">
               <svg
                 onClick={() => {
-                  console.log("Menu button clicked");
                   toggleMenu();
                 }}
                 xmlns="http://www.w3.org/2000/svg"

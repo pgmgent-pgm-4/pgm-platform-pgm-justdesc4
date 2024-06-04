@@ -34,7 +34,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.5);
   color: white;
   border: none;
   padding: 1rem;
@@ -44,7 +44,7 @@
 }
 
 .slider button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 .left-arrow {

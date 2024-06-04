@@ -12,6 +12,7 @@ footer .footer-flex {
 @media (max-width: 25rem) {
   footer .footer-flex {
     flex-direction: column;
+    gap: 0;
   }
 }
 

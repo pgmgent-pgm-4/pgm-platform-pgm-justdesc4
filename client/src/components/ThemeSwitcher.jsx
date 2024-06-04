@@ -10,6 +10,7 @@ export default function ThemeSwitcher() {
       ? document.body.classList.add("dark")
       : document.body.classList.remove("dark");
   }, [isDarkMode]);
+
   const handleClick = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -17,7 +18,7 @@ export default function ThemeSwitcher() {
   return (
     <div className="theme-switcher">
       <button onClick={handleClick}>
-        {isDarkMode ? <MdDarkMode /> : <MdSunny />}
+        {isDarkMode ? <MdSunny /> : <MdDarkMode />}
       </button>
     </div>
   );
