@@ -5,3 +5,9 @@
 .blog-page .posts {
   justify-content: flex-start;
 }
+
+@media (max-width: 74.0625rem) {
+  .blog-page .posts {
+    justify-content: center;
+  }
+}

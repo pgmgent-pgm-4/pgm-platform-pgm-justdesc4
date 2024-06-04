@@ -19,6 +19,10 @@ h1 {
   line-height: 100%;
 }
 
+ul {
+  padding: 0;
+}
+
 /* Button link */
 .btn-link {
   text-decoration: none;

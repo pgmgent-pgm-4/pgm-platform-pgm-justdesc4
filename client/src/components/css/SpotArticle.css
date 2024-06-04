@@ -13,8 +13,20 @@
   flex-direction: row;
 }
 
+@media (max-width: 41.375rem) {
+  .spotArticle:nth-child(odd) {
+    flex-direction: column;
+  }
+}
+
 .spotArticle:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 41.375rem) {
+  .spotArticle:nth-child(even) {
+    flex-direction: column;
+  }
 }
 
 .spotArticle:last-child {
