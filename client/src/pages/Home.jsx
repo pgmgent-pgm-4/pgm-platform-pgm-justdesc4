@@ -43,7 +43,7 @@ export default function Home() {
           ))}
         </div>
         <a className="seemore-btn" href="/portfolio">
-          See more
+          Zie meer
         </a>
       </section>
 
@@ -51,7 +51,7 @@ export default function Home() {
         <h2 className="spotlight-title">Blog.</h2>
         <PostPreview posts={firstThreeBlogposts} path="/blog" />
         <a className="seemore-btn" href="/blog">
-          See more
+          Zie meer
         </a>
       </section>
 
@@ -59,7 +59,7 @@ export default function Home() {
         <h2 className="spotlight-title">Services.</h2>
         <PostPreview posts={firstThreeServices} path="/services" />
         <a className="seemore-btn" href="/services">
-          See more
+          Zie meer
         </a>
       </section>
     </div>

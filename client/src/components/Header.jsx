@@ -11,7 +11,9 @@ export default function Header() {
     <header>
       <div className="container">
         <a href="/" className="logo">
-          <h1>PGM Platform</h1>
+          <h1>
+            <span>PGM</span> Platform
+          </h1>
         </a>
         <nav>
           <ul>

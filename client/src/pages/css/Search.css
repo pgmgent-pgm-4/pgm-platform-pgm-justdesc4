@@ -41,12 +41,12 @@ body.dark .search__form {
 }
 
 body.dark .search__form input {
-  background-color: #333;
+  background-color: #1f1f1f;
   color: white;
 }
 
 body.dark .search__form button {
-  background-color: #333;
+  background-color: #1f1f1f;
 }
 
 body.dark .search__form svg {

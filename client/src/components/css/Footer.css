@@ -25,10 +25,6 @@ footer a {
   color: black;
 }
 
-footer p {
-  margin-left: 1.2rem;
-}
-
 /* Dark Mode */
 body.dark footer a {
   color: #bfbfbf;

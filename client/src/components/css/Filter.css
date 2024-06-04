@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin: 3.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .filter ul {
@@ -23,14 +25,21 @@
   padding: 1rem 2rem;
   width: 100%;
   cursor: pointer;
+  color: white;
 }
 
 .filter button:hover {
   background-color: #0077a2;
-  color: white;
+  color: #bfbfbf;
 }
 
 .filter button:active {
   background-color: #0077a2;
   color: white;
+  transform: translateY(1px);
+}
+
+/* Dark Mode */
+body.dark .filter button {
+  color: black;
 }

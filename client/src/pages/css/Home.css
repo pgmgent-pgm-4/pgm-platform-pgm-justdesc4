@@ -45,6 +45,13 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 74.0625rem) {
+  .spotlight-blog h2,
+  .spotlight-services h2 {
+    text-align: center;
+  }
+}
+
 .spotlight-title {
   font-size: 1.75rem;
   margin-left: 1.5rem;
