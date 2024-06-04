@@ -1,10 +1,13 @@
 .team-member {
   max-width: 15rem;
+  width: 100%;
 }
 
 .team-member img {
-  border-radius: 50%;
+  max-width: 12rem;
+  max-height: 12rem;
   width: 100%;
-  max-height: 15rem;
+  height: 100%;
   object-fit: cover;
+  border-radius: 50%;
 }

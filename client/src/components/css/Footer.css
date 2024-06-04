@@ -9,6 +9,12 @@ footer .footer-flex {
   gap: 1rem;
 }
 
+@media (max-width: 25rem) {
+  footer .footer-flex {
+    flex-direction: column;
+  }
+}
+
 footer li {
   list-style: none;
 }

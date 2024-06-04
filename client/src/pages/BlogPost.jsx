@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { GET_ALL_BLOGPOSTS } from "../graphql/queries";
+import { Helmet } from "react-helmet";
 import "./css/BlogPost.css";
 
 export default function BlogPost() {
@@ -17,6 +18,9 @@ export default function BlogPost() {
 
   return (
     <div className="blog-post container">
+      <Helmet>
+        <title>Blog: {blogpost.title}</title>
+      </Helmet>
       <div className="back">
         <svg
           version="1.1"

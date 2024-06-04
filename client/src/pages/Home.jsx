@@ -1,6 +1,7 @@
 import React from "react";
 import { GET_ALL_FOR_HOME } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
+import { Helmet } from "react-helmet";
 import HeroHome from "../components/HeroHome";
 import SpotProject from "../components/SpotProject";
 import PostPreview from "../components/PostPreview";
@@ -19,6 +20,9 @@ export default function Home() {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>PGM Platform</title>
+      </Helmet>
       <HeroHome
         title={education.title}
         description={education.description}

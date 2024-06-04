@@ -17,7 +17,7 @@ export default function ThemeSwitcher() {
   return (
     <div className="theme-switcher">
       <button onClick={handleClick}>
-        {isDarkMode ? <MdSunny /> : <MdDarkMode />}
+        {isDarkMode ? <MdDarkMode /> : <MdSunny />}
       </button>
     </div>
   );

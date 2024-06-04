@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_BLOGPOSTS, GET_ALL_COURSES } from "../graphql/queries";
+import { Helmet } from "react-helmet";
 import PostPreview from "../components/PostPreview";
 import "./css/Search.css";
 
@@ -29,6 +30,9 @@ export default function Search() {
 
   return (
     <div className="search container">
+      <Helmet>
+        <title>PGM Platform - Doorzoek het platform.</title>
+      </Helmet>
       <h1>Doorzoek het platform.</h1>
       <div className="search__form">
         <input type="text" placeholder="Search" onChange={handleSearch} />

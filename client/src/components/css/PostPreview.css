@@ -5,6 +5,12 @@
   margin-left: 1rem;
 }
 
+@media (max-width: 74.0625rem) {
+  .posts {
+    justify-content: center;
+  }
+}
+
 .post {
   max-width: 22rem;
   width: 100%;

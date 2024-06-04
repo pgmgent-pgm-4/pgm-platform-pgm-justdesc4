@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { GET_ALL_PROJECTS } from "../graphql/queries";
+import { Helmet } from "react-helmet";
 import ImageSlider from "../components/ImageSlider";
 import "./css/Project.css";
 
@@ -18,6 +19,9 @@ export default function Project() {
 
   return (
     <div className="project container">
+      <Helmet>
+        <title>Project: {project.title}</title>
+      </Helmet>
       <div className="back">
         <svg
           version="1.1"

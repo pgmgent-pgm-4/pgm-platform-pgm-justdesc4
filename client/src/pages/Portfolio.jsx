@@ -3,6 +3,7 @@ import Filter from "../components/Filter";
 import PostPreview from "../components/PostPreview";
 import { GET_ALL_COURSES } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
+import { Helmet } from "react-helmet";
 
 export default function Portfolio() {
   const { loading, error, data } = useQuery(GET_ALL_COURSES);
@@ -35,6 +36,9 @@ export default function Portfolio() {
 
   return (
     <div>
+      <Helmet>
+        <title>PGM Platform - Portfolio</title>
+      </Helmet>
       <h1>Ontdek ons werk.</h1>
       <figure>
         <img src="/assets/images/projects-banner.png" alt="Projects banner" />

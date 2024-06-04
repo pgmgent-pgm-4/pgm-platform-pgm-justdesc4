@@ -1,6 +1,7 @@
 import React from "react";
 import { GET_EDUCATIONS } from "../graphql/queries";
 import { useQuery } from "@apollo/client";
+import { Helmet } from "react-helmet";
 import InfoDay from "../components/InfoDay";
 import "./css/Education.css";
 
@@ -14,6 +15,9 @@ export default function Education() {
 
   return (
     <div>
+      <Helmet>
+        <title>PGM Platform - Opleiding</title>
+      </Helmet>
       <h1>Leer de opleiding kennen!</h1>
       <InfoDay
         image={education.images[0].url}

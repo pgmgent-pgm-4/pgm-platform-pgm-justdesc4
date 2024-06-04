@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useQuery } from "@apollo/client";
 import { GET_ALL_TEAM_MEMBERS } from "../graphql/queries";
+import { Helmet } from "react-helmet";
 import Filter from "../components/Filter";
 import TeamMember from "../components/TeamMember";
 import "./css/Team.css";
@@ -36,6 +37,9 @@ export default function Team() {
 
   return (
     <>
+      <Helmet>
+        <title>PGM Platform - Team</title>
+      </Helmet>
       <h1>Ontdek ons team.</h1>
       <section>
         <div className="container">

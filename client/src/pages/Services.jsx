@@ -3,6 +3,7 @@ import Filter from "../components/Filter";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { GET_ALL_SERVICES } from "../graphql/queries";
+import { Helmet } from "react-helmet";
 import "./css/Services.css";
 
 export default function Services() {
@@ -32,6 +33,9 @@ export default function Services() {
 
   return (
     <>
+      <Helmet>
+        <title>PGM Platform - Services</title>
+      </Helmet>
       <h1>Services.</h1>
       <section>
         <div className="services container">

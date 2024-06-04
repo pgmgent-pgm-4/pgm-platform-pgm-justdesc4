@@ -11,6 +11,13 @@ header .container {
   padding: 0 2rem;
 }
 
+@media (max-width: 23.4375rem) {
+  header .container {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+}
+
 header h1 {
   margin-bottom: 0;
 }
