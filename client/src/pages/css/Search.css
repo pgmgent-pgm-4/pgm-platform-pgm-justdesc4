@@ -1,0 +1,54 @@
+.search__form {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid black;
+}
+
+.search__form input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search__form button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.search__form svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.search__results h1 {
+  text-align: start;
+  margin-left: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Dark Mode */
+body.dark .search__form {
+  border: 0.1rem solid white;
+}
+
+body.dark .search__form input {
+  background-color: #333;
+  color: white;
+}
+
+body.dark .search__form button {
+  background-color: #333;
+}
+
+body.dark .search__form svg {
+  color: white;
+}
