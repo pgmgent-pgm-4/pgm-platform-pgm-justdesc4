@@ -16,12 +16,15 @@ export default function Portfolio() {
   );
 
   // Set initial projects for on page load
+  const allProjects = coursesWithProjects
+    .map((course) => course.projects)
+    .flat();
   useEffect(() => {
     if (!initialProjectsSet && coursesWithProjects.length > 0) {
-      setProjects(coursesWithProjects[0].projects);
+      setProjects(allProjects);
       setInitialProjectsSet(true);
     }
-  }, [coursesWithProjects, initialProjectsSet]);
+  }, [coursesWithProjects, allProjects, initialProjectsSet]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error ...</p>;
