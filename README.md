@@ -17,7 +17,7 @@ This is my first React project, all feedback is welcome!
 - Small selection from the blog with links to detail pages
 - Services with links to the service
 
-### Program Details
+### Curriculum
 
 - Overview of the curriculum with detail for each course
 
