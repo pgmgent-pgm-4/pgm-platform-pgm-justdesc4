@@ -35,9 +35,6 @@ This is my first React project, all feedback is welcome!
 ### Services
 
 - Overview of services with detail for each service
-  - Real client work
-  - Workplace learning: real cases, guest lectures, internships
-  - Workshops: start-to-code
 
 ### Team
 
