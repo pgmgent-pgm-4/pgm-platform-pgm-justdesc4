@@ -1,60 +1,80 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/zYbJnoN2)
-# graphcms-boilerplate
+# PGM Platform
 
-GraphCMS Boilerplate
+The PGM Platform is designed for the 'Graduaat Programmeren' education at Artevelde Ghent, offering a showcase of student portfolios from various program lines. It aims to serve prospective students, current students, alumni, industry professionals, and other interested parties.
 
-## Client
+This is my first React project, all feedback is welcome!
 
-Create a new react app with create-react-app named `client`
+## Links
 
-create `.env`-file
-`.env` file under the client folder with the following content:
+- [Website](https://pgm-platform-pgm-justdesc4.onrender.com/)
 
-```
-REACT_APP_NODE_ENV=development
-REACT_APP_HYGRAPH_CONTENT_API=
-REACT_APP_HYGRAPH_ACCESS_TOKEN=e
-REACT_APP_AUTH_KEY_LOCALSTORAGE=react-boilerplate-pgm-4:currentUser
-```
+## Feature Overview
 
-## Seeder
+### Home Page
 
-`development.env` file under server folder with the following content:
+- Hero with a call to action
+- Small selection from the portfolio with links to detail pages
+- Small selection from the blog with links to detail pages
+- Services with links to the service
 
-```
-NODE_ENV=development
-HYGRAPH_CONTENT_API=
-HYGRAPH_ACCESS_TOKEN=
-```
+### Program Details
 
-## Server
+- Overview of the curriculum with detail for each course
 
-`development.env` file under server folder with the following content:
+### Portfolio
 
-```
-NODE_ENV=development
-HOST=127.0.0.1
-POST=8080
-JWT_SECRET=
-JWT_EXPIRE=24h
-HYGRAPH_CONTENT_API=
-HYGRAPH_ACCESS_TOKEN=
-```
+- Overview page
+- Detailed view of each project
+- Filtering and sorting options
 
-## Deployment
+### Blog
 
-### Stap 01
+- Overview page
+- Detailed view of each post
 
-![Render.com | New Web Service](./docs/assets/images/render_stap01.png)
+### Services
 
-### Stap 02
+- Overview of services with detail for each service
+  - Real client work
+  - Workplace learning: real cases, guest lectures, internships
+  - Workshops: start-to-code
 
-![Render.com | New Web Service](./docs/assets/images/render_stap02.png)
+### Team
 
-### Stap 03
+- Overview of team members
+- Filtering options
 
-![Render.com | New Web Service](./docs/assets/images/render_stap03.png)
+### Search
 
-### Stap 04
+- Content search functionality
 
-![Render.com | New Web Service](./docs/assets/images/render_stap04.png)
+### Theme
+
+- Light and dark mode with switch functionality
+
+### Footer
+
+- Quick access to other platforms where PGM is present
+
+## Technical Specifications
+
+### Front-end
+
+- Built using React
+- State management with Context API
+- Client-side routing with React Router DOM
+- SEO friendly head-tags with React Helmet
+- Styled with Styled Components
+- Integration of Cloud service: GraphCMS
+
+### Deployment
+
+- Hosted on Render.com
+
+### Backend
+
+- Backend as a Service (BAAS) using GraphCMS
+
+## Author
+
+Justin Descan
